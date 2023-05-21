@@ -1,19 +1,21 @@
-function MaxNum(array) {
-    let maximo = 0
-    let indice = 0
+function maxNum(array) {
+
+  if (array.length === 0) {
+      return -1;
+       }
+
+ let maximo = array [0];
+ let indice = 0;
+
      for (let i=0; i<array.length ; i++) {
             if (array[i] > maximo) {
             maximo = array [i];
             indice = i;
             }
-        
-
-     }
-
-     return indice;
-
+        }
+    return indice;
 }
 
-const num = [55,4,3,7,27];
-const resultado = MaxNum(num);
+const num = [5,3,1,27];
+const resultado = maxNum(num);
 console.log (resultado);

@@ -1,13 +1,17 @@
 function join(array){
 
-    let frase = ""
-    for (i=0; i<array.length; i++) {
+    if (array.length === 0) {
+        return '';
+      }
 
-        frase = frase + " " + array [i];
+    let frase = array[0]
+    for (i=0; i<(array.length-1); i++) {
+
+        frase = frase + " " + array [i+1];
     }
 return frase
 }
 
-const palabras = ["Hola", "Mundo", "Soy", "Diego"];
+const palabras = ["Make", "It", "Real"];
 const resultado = join(palabras);
 console.log (resultado);

@@ -1,4 +1,8 @@
-function MaxNum(array) {
+function maxNum(array) {
+
+    if (array.length === 0){
+           return "undefined";
+    }
     let maximo = 0
      for (let i=0; i<array.length;i++) {
             if (array[i] > maximo)
@@ -10,6 +14,6 @@ function MaxNum(array) {
 
 }
 
-const num = [5,4,3,7,27];
-const resultado = MaxNum(num);
+const num = [10, 9, 8, 7, 6, 5, 4];
+const resultado = maxNum(num);
 console.log (resultado);
